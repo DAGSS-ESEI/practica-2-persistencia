@@ -113,14 +113,14 @@ El resto de dependencias necesarias para `hibernate-core` serán descargadas e i
 
 ## AÑADIR ENTIDADES
 
-Crear el directorio para el paquete `entidades` y copiar los ficheros Java con la definición de las entidades (disponibles en [https://github.com/DAGSS-ESEI/practica-2-persistencia/tree/main/src/main/java/es/uvigo/dagss/pedidos/entidades](https://github.com/DAGSS-ESEI/practica-2-persistencia/tree/main/src/main/java/es/uvigo/dagss/pedidos/entidades))
+Crear el directorio para el paquete `entidades` y copiar los ficheros Java con la definición de las entidades (disponibles en [https://github.com/DAGSS-ESEI/practica-2-persistencia/tree/master/src/main/java/es/uvigo/dagss/pedidos/entidades](https://github.com/DAGSS-ESEI/practica-2-persistencia/tree/master/src/main/java/es/uvigo/dagss/pedidos/entidades))
 
 ```sh
 mkdir -p src/main/java/es/uvigo/dagss/pedidos/entidades
 
 cd src/main/java/es/uvigo/dagss/pedidos/entidades
 
-wget https://raw.githubusercontent.com/DAGSS-ESEI/practica-2-persistencia/main/src/main/java/es/uvigo/dagss/pedidos/entidades/{Articulo,Almacen,ArticuloAlmacen,ArticuloAlmacenId,Familia,Direccion,Cliente,Pedido,LineaPedido,EstadoPedido}.java
+wget https://raw.githubusercontent.com/DAGSS-ESEI/practica-2-persistencia/refs/heads/master/src/main/java/es/uvigo/dagss/pedidos/entidades/{Articulo,Almacen,ArticuloAlmacen,ArticuloAlmacenId,Familia,Direccion,Cliente,Pedido,LineaPedido,EstadoPedido}.java
 
 popd
 ```
@@ -201,7 +201,7 @@ Crear el directorio para el paquete `daos` y copiar los ficheros Java con la def
 mkdir -p src/main/java/es/uvigo/dagss/pedidos/daos
 cd src/main/java/es/uvigo/dagss/pedidos/daos
 
-wget https://raw.githubusercontent.com/DAGSS-ESEI/practica-2-persistencia/main/src/main/java/es/uvigo/dagss/pedidos/daos/{GenericoDAO,GenericoDAOJPA,ClienteDAO,ClienteDAOJPA,PedidoDAO,PedidoDAOJPA,PedidosException}.java
+wget https://raw.githubusercontent.com/DAGSS-ESEI/practica-2-persistencia/refs/heads/master/src/main/java/es/uvigo/dagss/pedidos/daos/{GenericoDAO,GenericoDAOJPA,ClienteDAO,ClienteDAOJPA,PedidoDAO,PedidoDAOJPA,PedidosException}.java
 
 popd
 ```
@@ -223,7 +223,7 @@ popd
 ```sh
 cd src/main/java/es/uvigo/dagss/pedidos/
 
-wget https://raw.githubusercontent.com/DAGSS-ESEI/practica-2-persistencia/main/src/main/java/es/uvigo/dagss/pedidos/Main.java
+wget https://raw.githubusercontent.com/DAGSS-ESEI/practica-2-persistencia/refs/heads/master/src/main/java/es/uvigo/dagss/pedidos/Main.java
 
 popd
 ```
