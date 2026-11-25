@@ -63,7 +63,7 @@ mysql> set @@session.time_zone = '+00:00';
 
 #### Con servidor de BD en contenedor Docker
 
-Para no instalar MySQL localmente puede arrancarse un contenedor Docker (los datos se guardarán en un volumen gestionado por Docker llamado `dagss_dbdata`):
+Para no instalar MySQL localmente puede arrancarse un contenedor Docker (los datos se guardarán en un volumen gestionado por Docker llamado `dagss_mysql_dbdata`):
 
 ```bash
 docker run -d --rm --name dagss-mysql \
@@ -72,7 +72,7 @@ docker run -d --rm --name dagss-mysql \
   -e MYSQL_PASSWORD=dagss \
   -e MYSQL_ROOT_PASSWORD=rootpass \
   -p 3307:3306 \
-  -v dagss_dbdata:/var/lib/mysql \
+  -v dagss_mysql_dbdata:/var/lib/mysql \
   mysql:8.0.46
 ```
 
